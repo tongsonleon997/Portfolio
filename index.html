@@ -13,13 +13,13 @@ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:en
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0C1512;--surface:#14211D;--ink:#E8F0EC;--muted:#9DB0A8;--line:#27392F;--grid:rgba(232,240,236,.05);--accent:#3DDC97;--accent-ink:#0C1512;color-scheme:dark}}
 :root[data-theme="dark"]{--bg:#0C1512;--surface:#14211D;--ink:#E8F0EC;--muted:#9DB0A8;--line:#27392F;--grid:rgba(232,240,236,.05);--accent:#3DDC97;--accent-ink:#0C1512;color-scheme:dark}
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 92px)}
 body{margin:0;background-color:var(--bg);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:36px 36px;color:var(--ink);font:400 1.0625rem/1.65 var(--body)}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
 a{color:inherit}
 :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
 .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
-header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.nav{padding-top:16px;position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;align-items:center;gap:20px;height:56px}
 .logo{font:800 1.15rem var(--display);text-decoration:none;letter-spacing:-.01em}
 .nav nav{display:flex;gap:18px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
@@ -178,7 +178,7 @@ footer{margin-top:72px;border-top:1px solid var(--line);padding:24px 0 32px;colo
 <section id="contact">
 <h2>Contact</h2>
 <div class="contact">
-<div><p style="max-width:42ch">Looking for an Intern? Send me a message.</p></div>
+<div><p style="max-width:42ch">Looking for an intern, a collaborator or someone to build a small IoT or networking project? Send me a message.</p></div>
 <ul class="clist" id="contactList"></ul>
 </div>
 </section>
@@ -210,7 +210,8 @@ var CERT=[
  {d:"February 2026",t:"Networking Basics",o:"Cisco Networking Academy",v:"https://www.credly.com/badges/b8d2e583-93a9-4578-8030-e4660c55dc58/public_url"},
  {d:"March 2026",t:"Introduction to Data Science",o:"Cisco Networking Academy",v:"https://www.credly.com/badges/0f5f0dc0-d8e8-4179-a5a5-82e3fe6070ea/public_url"},
  {d:"May 2026",t:"Introduction to Cybersecurity",o:"Cisco Networking Academy",v:"https://www.credly.com/badges/2b05baaf-b37c-46ce-bbaa-279d76fa3ad7/public_url"},
- {d:"May 2026",t:"Introduction to Modern AI",o:"Cisco Networking Academy",v:"https://www.credly.com/badges/f183ce00-4a45-4521-89ae-9c4c67219db7/public_url"}
+ {d:"May 2026",t:"Introduction to Modern AI",o:"Cisco Networking Academy",v:"https://www.credly.com/badges/f183ce00-4a45-4521-89ae-9c4c67219db7/public_url"},
+ {d:"November 2026",t:"Operating System Basics",o:"Cisco Networking Academy",v:"https://www.credly.com/badges/4fb4281d-f66e-4083-8bfb-6e9cd0ea5c16/public_url"}
 ];
 var cur=0;
 var PROJ=[
